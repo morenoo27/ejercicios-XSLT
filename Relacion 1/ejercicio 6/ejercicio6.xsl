@@ -24,7 +24,7 @@
                 </p>
 
                 <table border="1">
-                    <tr><xsl:apply-templates /></tr>
+                    <xsl:apply-templates />
                 </table>
                 
             </body>
@@ -34,7 +34,7 @@
     </xsl:template>
 
     <xsl:template match="ciclo">
-        <xsl:value-of select="nombre" />
+        <tr><th><xsl:value-of select="nombre" /></th></tr>
     </xsl:template>
 
 </xsl:stylesheet>

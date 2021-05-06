@@ -11,7 +11,7 @@
             </head>
 
             <body>
-                <table>
+                <table border="1">
                     <xsl:apply-templates />
                 </table>
             </body>

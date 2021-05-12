@@ -11,9 +11,15 @@
             </head>
 
             <body>
-                <h1>Ciclos formativos del <xsl:value-of select="ies/@nombre" /></h1>
+                <h1>
+                    Ciclos formativos del
+                    <xsl:value-of select="ies/@nombre" />
+                </h1>
 
-                <ul><xsl:apply-templates /></ul>
+                <ul>
+                    <xsl:apply-templates />
+                </ul>
+                
             </body>
 
         </html>
@@ -21,7 +27,15 @@
     </xsl:template>
 
     <xsl:template match="ciclo">
-        <li><xsl:value-of select="nombre" /></li>
+            <li>
+                <xsl:value-of select="@id" />
+                <br />
+                <xsl:value-of select="nombre" />,
+                Ciclo Formativo de Grado
+                <xsl:value-of select="grado" />
+                creado en 
+                <xsl:value-of select="decretoTitulo/@año" />
+            </li>
     </xsl:template>
 
 </xsl:stylesheet>

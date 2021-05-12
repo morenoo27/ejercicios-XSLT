@@ -7,11 +7,13 @@
         <html>
 
             <head>
-                <title>Ejercicio 6</title>
+                <title>Ejercicio 7</title>
             </head>
 
             <body>
-                <h1><xsl:value-of select="ies/@nombre" /></h1>
+                <h1>
+                    <xsl:value-of select="ies/@nombre" />
+                </h1>
                 <p>
                     Pagina web:
                     <a>
@@ -31,7 +33,7 @@
                     </tr>
                     <xsl:apply-templates />
                 </table>
-                
+
             </body>
 
         </html>
@@ -40,9 +42,15 @@
 
     <xsl:template match="ciclo">
         <tr>
-            <td><xsl:value-of select="nombre" /></td>
-            <td><xsl:value-of select="grado" /></td>
-            <td><xsl:value-of select="decretoTitulo/@año" /></td>
+            <td>
+                <xsl:value-of select="nombre" />
+            </td>
+            <td>
+                <xsl:value-of select="grado" />
+            </td>
+            <td>
+                <xsl:value-of select="decretoTitulo/@año" />
+            </td>
         </tr>
     </xsl:template>
 

@@ -22,11 +22,11 @@
                     <xsl:sort select="titulo" />
                         <tr>
                             <!-- apartado A -->
-                            <xsl:choose>
-                                <xsl:when test="precio > 100">
+                            <xsl:choose> <!-- switch -->
+                                <xsl:when test="precio > 100"> <!-- case -->
                                     <td><span class="red"><xsl:value-of select="titulo"/> <xsl:text> </xsl:text> (CARO)</span></td>
                                 </xsl:when>
-                                <xsl:otherwise>
+                                <xsl:otherwise> <!-- default -->
                                     <td><xsl:value-of select="titulo"/></td>
                                 </xsl:otherwise>
                             </xsl:choose>

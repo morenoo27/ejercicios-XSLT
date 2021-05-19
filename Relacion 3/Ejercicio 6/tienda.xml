@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="ejercicio6.xsl"?>
+<tienda>
+    <nombre>La tiendecilla</nombre>
+    <telefono>953 87 12 23</telefono>
+    <producto precio="50">
+        <codigo>92</codigo>
+        <cantidad>10</cantidad>
+        <articulo>Radio Casette</articulo>
+    </producto>
+    <producto precio="400">
+        <codigo>101</codigo>
+        <cantidad>3</cantidad>
+        <articulo>Sofá</articulo>
+    </producto>
+    <producto precio="2000">
+        <codigo>103</codigo>
+        <cantidad>50</cantidad>
+        <articulo>Reloj Viceroy</articulo>
+    </producto>
+    <producto precio="100">
+        <codigo>5</codigo>
+        <cantidad>50</cantidad>
+        <articulo>Xiaomi M3</articulo>
+    </producto>
+    <producto precio="350">
+        <codigo>103</codigo>
+        <cantidad>50</cantidad>
+        <articulo>Play Station 3</articulo>
+    </producto>
+</tienda>

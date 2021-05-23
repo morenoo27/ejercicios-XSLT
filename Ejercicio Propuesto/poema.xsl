@@ -16,13 +16,7 @@
                 <p>
                     <xsl:for-each select="antologia/poema">
                         <xsl:sort select="titulo" />
-                        <a>
-                            <xsl:attribute name="href">
-                                #
-                                <xsl:value-of select="@añodepublicacion" />
-                            </xsl:attribute>
-                            <xsl:value-of select="titulo" />
-                        </a>
+                        <a><xsl:attribute name="href">#<xsl:value-of select="@añodepublicacion" /></xsl:attribute><xsl:value-of select="titulo" /></a>
                         <br />
                     </xsl:for-each>
                 </p>

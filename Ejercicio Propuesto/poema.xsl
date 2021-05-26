@@ -16,7 +16,9 @@
                 <p>
                     <xsl:for-each select="antologia/poema">
                         <xsl:sort select="titulo" />
-                        <a><xsl:attribute name="href">#<xsl:value-of select="@añodepublicacion" /></xsl:attribute><xsl:value-of select="titulo" /></a>
+                        <a>
+                            <xsl:attribute name="href">#<xsl:value-of select="@añodepublicacion" /></xsl:attribute><xsl:value-of select="titulo" />
+                        </a>
                         <br />
                     </xsl:for-each>
                 </p>
@@ -46,16 +48,18 @@
                     <!-- SUBTITULO (SI TIENE) -->
                     <xsl:if test="subtitulo != ''">
                         <h5>
-                            <xsl:value-of select="titulo" />
+                            <xsl:value-of select="subtitulo" />
                         </h5>
                     </xsl:if>
 
-                    <!-- POR CADA ESTROFA, UN PARRAFO CON LOS -->
+                    <!-- POR CADA ESTROFA, UN PARRAFO CON LOS VERSOS -->
                     <xsl:for-each select="estrofa">
                         <p>
-                            
+                            <!-- POR CADA VERSO, UNA LINEA CON SU CONTENIDO(+ SALTO DE LINEA) -->
                             <xsl:for-each select="verso">
-                                <xsl:value-of select="verso" />    <br />
+<!-- Si queremos acceder al mismo directorios del for each, se selecciona con el "." -->
+                                <xsl:value-of select="." />
+                                <br />
                             </xsl:for-each>
                         </p>
                     </xsl:for-each>

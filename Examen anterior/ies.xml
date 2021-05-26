@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="ies.xsl" type="text/xsl"?>
+<ies nombre="IES Mar de Alborán" web="http://www.maralboran.com">
+    <ciclos>
+        <ciclo id="DAW">
+            <nombre>Desarrollo de Aplicaciones Web</nombre>
+            <grado>Superior</grado>
+            <decretoTitulo año="2010" />
+        </ciclo>
+        <ciclo>
+            <nombre>Desarrollo de Aplicaciones Multiplataforma</nombre>
+            <grado>Superior</grado>
+            <decretoTitulo año="2010" />
+        </ciclo>
+        <ciclo id="ASIR">
+            <nombre>Administración de Sistemas Informáticos en Red</nombre>
+            <grado>Superior</grado>
+            <decretoTitulo año="2009" />
+            <cursos>
+                <curso nombre="Primero" horas="960">
+                    <asignaturas>
+                        <nombre horas="192">Planificación y administración de redes</nombre>
+                        <nombre horas="224">Implantación de sistemas operativos</nombre>
+                        <nombre horas="96">Fundamentos de hardware</nombre>
+                        <nombre horas="160">Gestión de bases de datos</nombre>
+                        <nombre horas="96">Lenguajes de marcas y sistemas de gestión de información</nombre>
+                        <nombre horas="96">Formación y Orientación Laboral</nombre>
+                        <nombre horas="96">Libre Configuración</nombre>
+                    </asignaturas>
+                </curso>
+                <curso nombre="Segundo" horas="1040">
+                    <asignaturas>
+                        <nombre horas="120">Administración de sistemas operativos</nombre>
+                        <nombre horas="120">Servicios de Red e Internet</nombre>
+                        <nombre horas="100">Implantación de aplicaciones web</nombre>
+                        <nombre horas="60">Administración de sistemas gestores de bases de datos</nombre>
+                        <nombre horas="100">Seguridad y alta disponibilidad</nombre>
+                        <nombre horas="60">Empresa e iniciativa emprendedora</nombre>
+                        <nombre horas="40">Libre Configuración</nombre>
+                        <nombre horas="400">Formación en centros de trabajo</nombre>
+                        <nombre horas="40">Proyecto de administración de sistemas informáticos en red</nombre>
+                    </asignaturas>
+                </curso>
+            </cursos>
+        </ciclo>
+        <ciclo id="SMR">
+            <nombre>Sistemas Microinformáticos y Redes</nombre>
+            <grado>Medio</grado>
+            <decretoTitulo año="2009" />
+                <cursos>
+                    <curso nombre="Primero" horas="960">
+                        <asignaturas>
+                            <nombre horas="224">Montaje y mantenimiento de equipos</nombre>
+                            <nombre horas="160">Sistemas operativos monopuesto</nombre>
+                            <nombre horas="256">Aplicaciones Informáticas</nombre>
+                            <nombre horas="224">Redes locales</nombre>
+                            <nombre horas="96">Formación y orientación laboral</nombre>
+                        </asignaturas>
+                    </curso>
+                </cursos>
+        </ciclo>
+    </ciclos>
+</ies>
